@@ -1,0 +1,342 @@
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.header {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid #dce0df;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.brandMark {
+  width: 27px;
+  height: 27px;
+  fill: #254c86;
+  transform: rotate(-12deg);
+}
+
+.brandDivider {
+  color: #adb6bc;
+  padding: 0 8px;
+}
+
+.edition, .eyebrow {
+  font-size: 10px;
+  letter-spacing: .16em;
+  font-weight: 700;
+}
+
+.edition {
+  color: #6c7d8a;
+}
+
+.intro {
+  padding: 64px 0 48px;
+}
+
+.eyebrow {
+  color: #98702c;
+  margin: 0 0 16px;
+}
+
+.intro h1 {
+  margin: 0 0 20px;
+  color: #254c86;
+  font-size: clamp(40px, 5vw, 64px);
+  letter-spacing: -.055em;
+  line-height: 1.1;
+  font-weight: 750;
+}
+
+.period {
+  color: #c39343;
+}
+
+.lead {
+  color: #657584;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  border-top: 1px solid #dce0df;
+  margin-bottom: 12px;
+}
+
+.sizeControl, .surfaceControl {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sizeControl input {
+  width: 150px;
+  accent-color: #254c86;
+  cursor: pointer;
+}
+
+.sizeValue {
+  min-width: 57px;
+  padding: 7px 9px;
+  background: #eeede7;
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.sizeValue span {
+  color: #6b7b8a;
+  margin-left: 3px;
+  font-size: 10px;
+}
+
+.themeToggle {
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid #d6dcdf;
+  border-radius: 9px;
+}
+
+.themeToggle button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #6b7b8a;
+  font-size: 12px;
+}
+
+.themeToggle button[aria-pressed='true'] {
+  background: #fff;
+  color: #243c5e;
+  box-shadow: 0 1px 3px #243c5e15;
+}
+
+.lightDot, .darkDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lightDot {
+  background: #f7f5ef;
+  border: 1px solid #a0aab4;
+}
+
+.darkDot {
+  background: #293b51;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #dce3e6;
+  border-radius: 16px;
+  background: #fffdf9;
+}
+
+.stage {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e4edf5;
+  color: #53708a;
+}
+
+.darkStage {
+  background: #243144;
+  color: #b4c6d8;
+}
+
+.cardNumber {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  font-size: 11px;
+  letter-spacing: .08em;
+  opacity: .75;
+}
+
+.motionTag {
+  position: absolute;
+  bottom: 19px;
+  font-size: 10px;
+  letter-spacing: .04em;
+}
+
+.cardInfo {
+  padding: 25px 24px 24px;
+}
+
+.cardInfo h2 {
+  margin: 0 0 10px;
+  color: #243c5e;
+  font-size: 19px;
+  font-weight: 650;
+  letter-spacing: -.02em;
+}
+
+.cardInfo p {
+  margin: 0 0 22px;
+  color: #6b7b8a;
+  font-size: 13px;
+  line-height: 1.65;
+  min-height: 43px;
+}
+
+.cardInfo code {
+  font-size: 10px;
+  color: #516b84;
+  padding: 6px 8px;
+  background: #edf2f5;
+  border-radius: 4px;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #74818c;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 25px 0 0;
+}
+
+.hint span {
+  color: #b58a3b;
+  font-size: 15px;
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 25px 0 30px;
+  border-top: 1px solid #dce0df;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #74818c;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer span span {
+  padding: 0 5px;
+}
+
+@media (max-width: 950px) {
+  .page {
+    padding: 0 28px;
+  }
+  .grid {
+    gap: 14px;
+  }
+  .cardInfo {
+    padding: 22px 18px;
+  }
+  .cardInfo p {
+    min-height: 65px;
+  }
+  .edition {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 0 20px;
+  }
+  .header {
+    min-height: 78px;
+  }
+  .brand {
+    font-size: 11px;
+    gap: 9px;
+  }
+  .brandDivider {
+    padding: 0 4px;
+  }
+  .intro {
+    padding: 42px 0 32px;
+  }
+  .lead {
+    font-size: 15px;
+  }
+  .desktopBreak {
+    display: none;
+  }
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sizeControl {
+    width: 100%;
+    gap: 12px;
+  }
+  .sizeControl input {
+    flex: 1;
+    min-width: 70px;
+  }
+  .surfaceControl {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .stage {
+    min-height: 230px;
+  }
+  .cardInfo p {
+    min-height: 0;
+    margin-bottom: 18px;
+  }
+  .hint {
+    align-items: baseline;
+    text-align: center;
+  }
+  .footer {
+    margin-top: 36px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

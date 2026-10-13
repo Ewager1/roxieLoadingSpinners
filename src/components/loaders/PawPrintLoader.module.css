@@ -1,0 +1,40 @@
+.paw {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: step 1.8s ease-in-out infinite;
+  fill: #cf9b46;
+  stroke: #fff4d7;
+  stroke-width: .65;
+}
+
+.first {
+  animation-delay: -.6s;
+}
+
+.second {
+  fill: #355f9b;
+  animation-delay: -.3s;
+}
+
+.third {
+  animation-delay: 0s;
+}
+
+@keyframes step {
+  0%, 65%, 100% {
+    opacity: .3;
+    transform: scale(.84);
+  }
+  25%, 40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paw {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

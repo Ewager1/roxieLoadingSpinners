@@ -1,0 +1,33 @@
+.peek {
+  animation: peek 5.2s ease-in-out infinite;
+}
+
+.portrait {
+  transform-origin: 104px 126px;
+  animation: tilt 5.2s ease-in-out infinite;
+}
+
+@keyframes peek {
+  0%, 6%, 100% {
+    transform: translateY(132px);
+  }
+  22%, 78% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes tilt {
+  0%, 28%, 64%, 100% {
+    transform: rotate(0deg);
+  }
+  42%, 52% {
+    transform: rotate(-3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .peek, .portrait {
+    animation: none;
+    transform: none;
+  }
+}
